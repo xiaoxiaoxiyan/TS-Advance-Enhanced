@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/root/edl/android-out/edl-android-arm64-full-ossl111
+exec_prefix=/root/edl/android-out/edl-android-arm64-full-ossl111
+libdir=/root/edl/android-out/edl-android-arm64-full-ossl111/lib
+includedir=/root/edl/android-out/edl-android-arm64-full-ossl111/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.4.5
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread 

@@ -1,0 +1,7 @@
+#!/system/bin/sh
+DIR="/data/adb/modules/tyedl/bin"
+export PYTHONHOME="$DIR/.."
+export PYTHONPATH="$DIR/../lib/python3.11/site-packages"
+export LD_LIBRARY_PATH="$DIR/../lib"
+export SSL_CERT_FILE="$DIR/../lib/python3.11/site-packages/certifi/cacert.pem"
+exec "$DIR/python3" "$DIR/edl.py" "$@"

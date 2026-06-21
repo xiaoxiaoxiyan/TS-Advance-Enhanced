@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: Exscript
+Version: 2.6.32
+Summary: Automating Telnet and SSH
+Home-page: https://github.com/knipknap/exscript/
+Author: Samuel Abels
+Author-email: knipknap@gmail.com
+License: MIT
+Keywords: exscript telnet ssh network networking automate automation library
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: COPYING
+License-File: AUTHORS
+Requires-Dist: future
+Requires-Dist: configparser
+Requires-Dist: paramiko<5,>=1.17
+Requires-Dist: pycryptodomex
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+Exscript is a Python module and a template processor for automating network
+connections over protocols such as Telnet or SSH. We attempt to create the
+best possible set of tools for working with Telnet and SSH.
